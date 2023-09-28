@@ -1,0 +1,54 @@
+{
+  "name": "react-gas-web-app-boilerplate",
+  "version": "1.0.0",
+  "description": "React Boilerplate for Google Apps Script Web Apps",
+  "scripts": {
+    "glogin": "clasp login",
+    "glogout": "clasp logout",
+    "gcreate": "clasp create --title 'McBrick Summary Dashboard' --rootDir ./apps-script",
+    "gclone": "clasp clone <PROJECT_ID> --rootDir ./apps-script",
+    "gpull": "clasp pull",
+    "gpush": "clasp push",
+    "gstart": "clasp push --watch",
+    "start": "parcel src/index.html --dist-dir ./apps-script",
+    "build": "parcel build src/index.html --dist-dir ./apps-script"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@google/clasp": "^2.4.2",
+    "@parcel/transformer-sass": "^2.9.1",
+    "@types/google-apps-script": "^1.0.62",
+    "assert": "^2.0.0",
+    "browserify-zlib": "^0.2.0",
+    "events": "^3.3.0",
+    "parcel": "latest",
+    "process": "^0.11.10",
+    "stream-browserify": "^3.0.0",
+    "util": "^0.12.5"
+  },
+  "parcel": {
+    "extends": "@parcel/config-default",
+    "transformers": {
+      "*.svg": [
+        "...",
+        "@parcel/transformer-svg-react"
+      ]
+    }
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/joy": "^5.0.0-alpha.82",
+    "@mui/lab": "^5.0.0-alpha.132",
+    "@mui/material": "^5.13.2",
+    "@parcel/transformer-svg-react": "^2.9.1",
+    "chart.js": "^4.4.0",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.10.0"
+  }
+}
