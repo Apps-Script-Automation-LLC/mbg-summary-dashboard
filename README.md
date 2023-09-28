@@ -1,1 +1,1 @@
-# react-gas-web-app-boilerplate
+# McBrick Group - Summary Dashboard
